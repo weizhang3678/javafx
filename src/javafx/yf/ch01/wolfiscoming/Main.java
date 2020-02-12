@@ -89,7 +89,7 @@ public class Main extends Application {
 
 				});
 			}
-		}, 0, 30000);
+		}, 0, 35000);
 	}
 
 	public void updateUi() {
@@ -100,11 +100,11 @@ public class Main extends Application {
 			text.setTextOrigin(VPos.TOP);
 			text.setTextAlignment(TextAlignment.JUSTIFY);
 			text.setWrappingWidth(400);
-			text.setFill(Color.rgb(255, 255, 255));
+			text.setFill(Color.rgb(0, 0, 0));
 			text.setFont(Font.font("SansSerif", FontWeight.BOLD, 24));
 
 			// Provides the animated scrolling behavior for the text
-			TranslateTransition transTransition = new TranslateTransition(new Duration(30000), text);
+			TranslateTransition transTransition = new TranslateTransition(new Duration(35000), text);
 			transTransition.setToY(-720);
 			transTransition.setInterpolator(Interpolator.LINEAR);// TODO
 			transTransition.setCycleCount(Timeline.INDEFINITE);
